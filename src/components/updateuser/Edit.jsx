@@ -26,7 +26,7 @@ const users={
     },[id])
     const submitForm=async(e)=>{
         e.preventDefault();
-        await axios.put(`https://backend-6-bhyd.onrender.com/api/update/${id}`,user)
+        await axios.put(`https://backend-yqi9.onrender.com/api/update/${id}`,user)
         .then((response)=>{
             toast.success(response.data.msg,{position:"top-right"})
             navigate("/")
